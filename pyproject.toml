@@ -1,0 +1,7 @@
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint.per-file-ignores]
+"backend/app/auth.py" = ["B008"] # FastAPI dependency and header declarations use callable defaults.
+"backend/app/routes.py" = ["B008"]
